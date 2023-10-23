@@ -82,26 +82,27 @@ To learn more about React Native, take a look at the following resources:
 
 npx react-native@latest init myApp
 
+**Comando para iniciar un proyecto en typescript**
 npx react-native init AwesomeTSProject --template react-native-template-typescript
 
 npx react-native run-android
 
 npx react-native start
 
+**Comando para listar emuladores disponibles**
 emulator -list-avds
 
+**Comando para levantar un emulador en particular**
 emulator -avd Pixel_5_API_33 -read-only
 
+**Comando para listar dispositivos físicos conectados**
 adb devices
 
-** En tu computadora, abre una terminal y conéctate a tu emulador con el comando **mark
-
+**En tu computadora, abre una terminal y conéctate a tu emulador con el comando**
 adb connect <emulador_id>.
 
-Ejecuta el comando
+**Ejecuta el comando para crear una nueva conexión inversa al emulador y poder conectar un celu fisico**
+adb reverse tcp:8081 tcp:8081
 
+**Ejecuta el comando para eliminar la conexión inversa del dispositivo real y volver a trabajar en el emulador**
 adb reverse --remove tcp:8081
-para eliminar la conexión inversa del dispositivo real.
-
-Ejecuta el comando adb reverse tcp:8081 tcp:8081
-para crear una nueva conexión inversa al emulador.
